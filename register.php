@@ -14,15 +14,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
     <link rel="stylesheet" type="text/css" href="Assets/css/register_style.css">
+    <script src="Assets/script/register-script.js"></script> 
 </head>
 <body>
 
 
     <div class="wrapper">
-
+        <div class="form-wrap">
         <div class="tab">
-        <button class="tablinks" onclick="openLoginForm(event, 'Login')">LogIn</button>
-        <button class="tablinks" onclick="openRegisterForm(event, 'Register')">Register</button>
+        <button class="tablinks" onclick="openLoginAndRegisterForm(event, 'Login')">Log In</button>
+        <button class="tablinks" onclick="openLoginAndRegisterForm(event, 'Register')">Register</button>
         </div>
 
 
@@ -100,6 +101,7 @@
             <?php if(in_array("<span style='color:green'>You're all set! Goahead and login!</span>",$error_array))echo "<span style='color:green'>You're all set! Goahead and login!</span>";?>
 
             </form>    
+        </div>
         </div>
 
             
