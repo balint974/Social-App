@@ -44,9 +44,9 @@ form{
     width:70%;
     height: 35px;
 }
-.tablinks:first-of-type{
+/* .tablinks:first-of-type{
     border-right: 1px solid black!important;
-}
+} */
 .tablinks:hover{
     color:white;
     font-size: larger;
@@ -55,6 +55,7 @@ form{
 
 .tab button.active {
     color:white;
+    font-size:larger;
 }
 
 .form-wrap{
