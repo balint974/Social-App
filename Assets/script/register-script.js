@@ -16,3 +16,5 @@ function openLoginAndRegisterForm(evt,formType){
     document.getElementById(formType).style.display="block";
     evt.currentTarget.className+=" active";
 }
+
+

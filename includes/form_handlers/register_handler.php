@@ -11,6 +11,20 @@
     $error_array = array(); //Holds error messages
 
     if(isset($_POST['register_button'])){
+
+        //show register form
+        echo "<script>
+            document.addEventListener('DOMContentLoaded', function(event) { 
+            var regtab = document.getElementById('tablinks-reg');
+            var logtab = document.getElementById('tablinks-log');
+            regtab.classList.add('active')
+            logtab.classList.remove('active')
+            var regcontent = document.getElementsByClassName('tabcontent');
+            regcontent[0].style.display='none';
+            regcontent[1].style.display='block';
+                    });</script>";
+        
+
         //Registration form values
 
         //First name
@@ -125,6 +139,7 @@
             $_SESSION['reg_lname'] ="";
             $_SESSION['reg_email'] ="";
             $_SESSION['reg_email2'] ="";
+            $_SESSION['reg_password'] ="";
 
         }
     }
