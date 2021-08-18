@@ -1,8 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+body *{
+    font-family: 'Arvo', serif;
+    
+    color:#574b90;
+}
+
+body{
+    background-color: #ffcccc;
+}
+
+.logo{
+    font-size: 25px;
+    margin-left:3px;
+}
+
+a{
+    text-decoration: none;
+    color:#574b90;
+}
+
+a:hover{
+    color:#341f97;
+}
+
+.logo a{
+    color:#574b90;
+}
+
 .top_bar{
     width:100%;
     height:50px; 
-    background-color: #00d2d3;
-    border-bottom: 0.25em solid #01a3a4;
+    background-color: #ff6b6b;
+    border-bottom: 0.25em solid #ee5253;
     margin-bottom: 5px;
-    padding:3px;
+    padding: 30px 15px;
+    display:flex;
+    align-items: center;
+    position:fixed;
+}
+
+nav a i{
+    font-size: 30px;
+    color:#574b90;
+}
+
+nav a i:hover{
+    color:#341f97;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: baseline;
+    justify-content: end;
+    width:100%;
+}
+
+nav a{
+    padding:0 3px;
+}
+.username-head{
+    color:#574b90;
+    font-size:20px;
+}
+
+.user_index{
+    top: 100px;
+    position: relative;
+}
+
+.u-row{
+    gap: 7px;
+}
+.column{
+    padding:10px;
+    background-color: #ff6b6b;
+    border: 3px outset #ee5253;
+    border-radius: 7px;
+    display: flex;
+}
+
+.user-image{
+    max-width: 100px;
+}
+.user_details{
+    display: flex;
+}
+
+.bold{
+    font-weight: bold;
+}
+.us_det h6{
+    padding:2px 0;
+    margin: 0;
+}
+.us_det{
+    padding:0 5px;
+}
+.post_form{
+    display:flex;
+    width: 100%;
+    gap: 20px;
+}
+#post_text{
+    flex-grow: 11;
+    border-radius: 5px;
+    max-height: 200px;
+}
+#post_button{
+    flex-grow: 1;
+    height: 44px;
+    align-self: center;
+    background-color:#574b90;
+    color:#ff6b6b;
+    border:none;
+    border-radius: 5px;
+}
+#post_button:hover{
+    background-color: #341f97;
+}
+.user-info-col{
+    max-height: 150px;
+}
+
+textarea:focus{
+    outline:0;
 }

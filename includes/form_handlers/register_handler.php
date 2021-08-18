@@ -126,8 +126,8 @@
             //Profile picture assignment
             $rand = rand(1,2);
             switch($rand){
-                case 1:$profile_pic = "/Assets/images/Profile_pic/defaults/head_pete_river.png";break;
-                case 2:$profile_pic = "/Assets/images/Profile_pic/defaults/head_amethyst.png";break;
+                case 1:$profile_pic = "Assets/images/Profile_pic/defaults/head_pete_river.png";break;
+                case 2:$profile_pic = "Assets/images/Profile_pic/defaults/head_amethyst.png";break;
             }
 
             $querry = mysqli_query($con, "INSERT INTO users VALUES('','$fname','$lname','$username','$em','$password','$date','$profile_pic','0' ,'0','no',',')");
